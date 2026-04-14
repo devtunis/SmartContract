@@ -23,18 +23,8 @@ def addVote(idCandidate,idJury):
             Jury[idJury]["vote"]-=1
             print("vote succes")
         else:
-            print("you left your vote")
-
-addVote("ghaith",111)
-addVote("ghaith",111)
-addVote("ghaith",111)
-addVote("ghaith",111)
-addVote("ghaith",111)
-addVote("ghaith",111)
-addVote("ghaith",111)
-addVote("ghaith",111)
-addVote("ghaith",111)
-addVote("ghaith",111)
-  
- 
- 
+            print("you left your vote || you not Jury")
+def modifyJury(idJury,v):
+    if idJury in Jury:
+        Jury[idJury]["isjury"]  = v
+        
